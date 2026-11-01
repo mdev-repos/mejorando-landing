@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>MejorAndo | Entrená con tu rutina, sin papel</title>
+    <meta
+      name="description"
+      content="MejorAndo es una app gratuita para planificar tus entrenamientos de fuerza, seguirlos serie por serie y ver si mejoraste. Se instala en el celular y funciona sin conexión."
+    />
+    <meta name="theme-color" content="#0c1017" />
+    <meta property="og:title" content="MejorAndo" />
+    <meta
+      property="og:description"
+      content="Planificá tu entrenamiento, seguilo serie por serie y compará con la vez anterior. Sin cuenta, sin conexión, sin papel."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap top-in">
+        <a class="brand" href="#" aria-label="MejorAndo, inicio">
+          <img src="img/logo.svg" alt="" width="36" height="36" />
+          <picture>
+            <source srcset="img/wordmark-claro.svg" media="(prefers-color-scheme: light)" />
+            <img src="img/wordmark-oscuro.svg" alt="MejorAndo" height="22" />
+          </picture>
+        </a>
+        <a class="btn small" data-app href="#instalar">Abrir la app</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1. Qué es y primer llamado a la acción -->
+      <section class="hero">
+        <div class="wrap hero-in">
+          <div class="hero-text">
+            <p class="eyebrow">EntrenAndo · gratis · sin cuenta</p>
+            <h1>Tu rutina, sin papel y sin vueltas.</h1>
+            <p class="lead">
+              MejorAndo es una app para planificar tus entrenamientos de fuerza, seguirlos serie por
+              serie y ver si mejoraste respecto de la vez anterior. Se instala en el celular y
+              funciona sin conexión.
+            </p>
+            <div class="actions">
+              <a class="btn primary" data-app href="#instalar">Abrir la app</a>
+              <a class="btn ghost" href="#instalar">Cómo instalarla</a>
+            </div>
+            <p class="fine">Tus datos quedan en tu teléfono. No pide registro ni muestra anuncios.</p>
+          </div>
+          <figure class="phone hero-phone">
+            <img
+              src="img/serie.webp"
+              width="390"
+              height="780"
+              alt="Pantalla de una serie de press banca con el peso, las repeticiones y botones para ajustarlos"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- 2. La historia -->
+      <section class="story" id="historia">
+        <div class="wrap narrow">
+          <p class="eyebrow">Por qué existe</p>
+          <h2>De una hoja de papel a una app.</h2>
+          <p>
+            Bajé 20 kg en unos meses. Durante ese tiempo lo fui llevando todo en papel, y esa forma
+            de anotar fue lo que más me ayudó a mejorar mi manera de trabajar.
+          </p>
+          <p>
+            Quise construir una app que recogiera aquello que hice en papel, para que otras personas
+            también puedan conseguir sus objetivos.
+          </p>
+          <p class="sign">Matías</p>
+          <p class="note">
+            Por eso es una app chica y hace pocas cosas. Las que hace tienen que servir mientras
+            entrenás, con la mano mojada de sudor y entre una serie y otra.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3. Qué hace hoy -->
+      <section class="features" id="que-hace">
+        <div class="wrap">
+          <p class="eyebrow">Lo que ya hace</p>
+          <h2>Pensada para usarla entre series.</h2>
+
+          <article class="feature">
+            <div class="feature-text">
+              <h3>Un plan en cuatro niveles</h3>
+              <p>
+                Un macrociclo agrupa mesociclos, cada mesociclo es una rutina con sus días y cada
+                día se hace varias veces, que son las ejecuciones. Así podés medir tu progreso
+                comparando la misma sesión a lo largo del tiempo.
+              </p>
+              <ul class="chips" aria-label="Niveles del plan">
+                <li>Macrociclo</li>
+                <li>Mesociclo</li>
+                <li>Día</li>
+                <li>Ejecución</li>
+              </ul>
+              <p class="aside">
+                Una rutina avanzada suma JumpSet, rest pause y escalonado, y deja que cada ejecución
+                sea distinta.
+              </p>
+            </div>
+            <figure class="phone">
+              <img
+                src="img/mesociclo.webp"
+                width="390"
+                height="780"
+                loading="lazy"
+                alt="Un mesociclo con los días Empuje, Tirón y Piernas y sus cuatro ejecuciones"
+              />
+            </figure>
+          </article>
+
+          <article class="feature flip">
+            <div class="feature-text">
+              <h3>Cada serie, contra la anterior</h3>
+              <p>
+                Al terminar una serie, la app te muestra lo que hiciste la última vez y te dice si
+                mejoraste. Más peso cuenta como mejora y, con el mismo peso, más repeticiones
+                también. Las series de aproximación se guardan aparte y no entran en la comparación.
+              </p>
+              <p class="aside">El resultado nunca depende solo del color, siempre viene con texto.</p>
+            </div>
+            <figure class="phone">
+              <img
+                src="img/comparar.webp"
+                width="390"
+                height="780"
+                loading="lazy"
+                alt="Una serie de press banca con la última vez, 75 kg por 6, y el aviso Mejoraste"
+              />
+            </figure>
+          </article>
+
+          <article class="feature">
+            <div class="feature-text">
+              <h3>Descansos que se respetan</h3>
+              <p>
+                El descanso lo define la rutina y el cronómetro no deja saltearlo. Cuando se acerca
+                el final cambia de color, a los 15 segundos pasa a amarillo, a los 10 a rojo y al
+                terminar a verde. También suena y vibra, y cada aviso se puede apagar.
+              </p>
+            </div>
+            <figure class="phone">
+              <img
+                src="img/descanso.webp"
+                width="390"
+                height="780"
+                loading="lazy"
+                alt="Cronómetro de descanso en amarillo con el aviso YA CASI y 14 segundos restantes"
+              />
+            </figure>
+          </article>
+
+          <article class="feature flip">
+            <div class="feature-text">
+              <h3>253 ejercicios con dibujo</h3>
+              <p>
+                Elegís por grupo muscular y cada ejercicio trae su ilustración. Si falta alguno,
+                creás el tuyo. Cada ejercicio recuerda de cuánto en cuánto subís el peso.
+              </p>
+              <ul class="thumbs" aria-label="Algunos ejercicios del catálogo">
+                <li><img src="img/ej/press-banca.webp" alt="Press banca" loading="lazy" /></li>
+                <li><img src="img/ej/dominadas.webp" alt="Dominadas" loading="lazy" /></li>
+                <li><img src="img/ej/sentadilla.webp" alt="Sentadilla" loading="lazy" /></li>
+                <li><img src="img/ej/remo-barra.webp" alt="Remo con barra" loading="lazy" /></li>
+                <li><img src="img/ej/press-militar.webp" alt="Press militar" loading="lazy" /></li>
+                <li><img src="img/ej/curl-barra.webp" alt="Curl con barra" loading="lazy" /></li>
+                <li><img src="img/ej/extension-polea.webp" alt="Extensión en polea" loading="lazy" /></li>
+                <li><img src="img/ej/prensa.webp" alt="Prensa" loading="lazy" /></li>
+                <li><img src="img/ej/zancadas.webp" alt="Zancadas" loading="lazy" /></li>
+                <li><img src="img/ej/cruces-polea.webp" alt="Cruces en polea" loading="lazy" /></li>
+                <li><img src="img/ej/peso-muerto-rumano.webp" alt="Peso muerto rumano" loading="lazy" /></li>
+                <li><img src="img/ej/crunch.webp" alt="Crunch" loading="lazy" /></li>
+              </ul>
+            </div>
+            <figure class="phone">
+              <img
+                src="img/biceps.webp"
+                width="390"
+                height="780"
+                loading="lazy"
+                alt="Lista de ejercicios de bíceps, cada uno con su ilustración"
+              />
+            </figure>
+          </article>
+
+          <article class="feature">
+            <div class="feature-text">
+              <h3>Pasale tu rutina a otra persona</h3>
+              <p>
+                Armás un macrociclo una vez y se lo mandás a quien quieras, por el menú de compartir
+                o como texto para pegar en un chat. Quien lo recibe lo carga y queda como algo suyo,
+                sin tu historial y sin tocar lo que ya tenía.
+              </p>
+            </div>
+            <figure class="phone">
+              <img
+                src="img/compartir.webp"
+                width="390"
+                height="780"
+                loading="lazy"
+                alt="Un macrociclo con los botones Compartir macrociclo y Copiar como texto"
+              />
+            </figure>
+          </article>
+
+          <div class="mini-grid">
+            <div class="mini">
+              <h3>Sin cuenta</h3>
+              <p>
+                Todo se guarda en tu teléfono. Podés guardar una copia de seguridad y restaurarla
+                cuando quieras.
+              </p>
+            </div>
+            <div class="mini">
+              <h3>Sin conexión</h3>
+              <p>
+                Se instala como una app y funciona en el gimnasio aunque no haya señal. Cuando hay
+                una versión nueva, te avisa.
+              </p>
+            </div>
+            <div class="mini">
+              <h3>Claro u oscuro</h3>
+              <p>Sigue el tema de tu teléfono, o lo elegís vos desde Ajustes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Instalación -->
+      <section class="install" id="instalar">
+        <div class="wrap narrow">
+          <p class="eyebrow">Instalala</p>
+          <h2>Es una página que se instala como app.</h2>
+          <div class="steps">
+            <div class="step">
+              <h3>En Android</h3>
+              <ol>
+                <li>Abrí <a data-app href="#instalar">la app</a> con Chrome.</li>
+                <li>
+                  Tocá <strong>Instalar</strong> en la tarjeta de Inicio, o el menú de los tres
+                  puntos y <strong>Instalar aplicación</strong>.
+                </li>
+                <li>Queda en tu pantalla de inicio con su ícono.</li>
+              </ol>
+            </div>
+            <div class="step">
+              <h3>En iPhone</h3>
+              <ol>
+                <li>Abrila con Safari.</li>
+                <li>Tocá <strong>Compartir</strong> y después <strong>Agregar a inicio</strong>.</li>
+              </ol>
+              <p class="aside">
+                La probé en Android. En iPhone debería funcionar igual, pero no vibra y todavía no
+                la probé ahí.
+              </p>
+            </div>
+          </div>
+          <p class="note">
+            Con la pantalla bloqueada el celular puede no reproducir el sonido del descanso. Es una
+            limitación de las apps que se instalan desde el navegador.
+          </p>
+        </div>
+      </section>
+
+      <!-- 5. Qué viene -->
+      <section class="roadmap" id="que-viene">
+        <div class="wrap narrow">
+          <p class="eyebrow">Lo que viene</p>
+          <h2>Un paso a la vez.</h2>
+          <ul class="road">
+            <li>
+              <span class="tag next">Próximo</span>
+              <div>
+                <h3>Comparar ejecuciones y ver el progreso</h3>
+                <p>La ejecución 2 contra la 1, y cómo evoluciona cada ejercicio con el tiempo.</p>
+              </div>
+            </li>
+            <li>
+              <span class="tag soon">Después</span>
+              <div>
+                <h3>
+                  <img src="img/modulo-alimentando.svg" alt="" width="28" height="28" /> AlimentAndo
+                </h3>
+                <p>Calorías, peso y medidas, para acompañar el entrenamiento.</p>
+              </div>
+            </li>
+            <li>
+              <span class="tag soon">Después</span>
+              <div>
+                <h3>
+                  <img src="img/modulo-caminando.svg" alt="" width="28" height="28" /> CaminAndo
+                </h3>
+                <p>Pasos diarios, con una meta recomendada.</p>
+              </div>
+            </li>
+            <li>
+              <span class="tag idea">Idea</span>
+              <div>
+                <h3>Cuenta opcional para sincronizar</h3>
+                <p>Para usar la misma rutina en más de un teléfono. Hoy no hace falta.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 6. Cómo se construyó -->
+      <section class="build" id="como-se-construyo">
+        <div class="wrap">
+          <div class="narrow">
+            <p class="eyebrow">Para quien mira el código</p>
+            <h2>Construida de punta a punta, junto a Claude.</h2>
+            <p>
+              Soy desarrollador backend y esta app es el proyecto donde recorrí todo lo demás,
+              desde el diseño hasta la publicación. La armé en pareja con Claude, el asistente de
+              Anthropic. Yo decido qué se hace y por qué, Claude escribe buena parte del código del
+              frente, y cada decisión queda escrita.
+            </p>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <h3>Diseño y estética</h3>
+              <p>
+                Identidad propia con nombre, logo de tres sectores y un color por módulo. Dos temas,
+                tipografía Figtree y una paleta pensada para leerse bien en un gimnasio.
+              </p>
+            </div>
+            <div class="card">
+              <h3>UX y UI</h3>
+              <p>
+                Pensada para usarse con una mano y entre series. Botones grandes, números que se
+                editan o se ajustan manteniendo apretado, y un descanso que avisa con color, sonido
+                y vibración.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Arquitectura</h3>
+              <p>
+                Aplicación web instalable que funciona sin conexión, con React, TypeScript y una
+                base de datos local. Las reglas del entrenamiento viven separadas de las pantallas y
+                los datos se migran entre versiones.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Decisiones escritas</h3>
+              <p>
+                Cada elección importante tiene su registro, con el contexto, las alternativas y las
+                consecuencias. Hoy son 13, desde la plataforma hasta cómo se comparten las rutinas.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Pruebas</h3>
+              <p>
+                Más de 60 pruebas automáticas sobre las reglas, la base de datos y las pantallas,
+                con tipos estrictos y revisión automática en cada cambio.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Publicación</h3>
+              <p>
+                Se despliega sola a cada cambio. Una versión nueva se avisa dentro de la app y se
+                instala con un toque.
+              </p>
+            </div>
+          </div>
+          <div class="actions center">
+            <a
+              class="btn ghost"
+              href="https://github.com/mdev-repos/app_mejorando__proyecto_personal"
+              rel="noopener"
+              >Ver el código en GitHub</a
+            >
+            <a
+              class="btn ghost"
+              href="https://github.com/mdev-repos/app_mejorando__proyecto_personal/tree/main/docs/decisiones"
+              rel="noopener"
+              >Leer las decisiones</a
+            >
+          </div>
+          <p class="about">
+            <strong>Matías Mazzitelli.</strong> Desarrollador backend con Java y Spring Boot y
+            mainframe IBM.
+            <a href="https://github.com/mdev-repos" rel="noopener">GitHub</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- 7. Segundo llamado a la acción -->
+      <section class="final" id="descargar">
+        <div class="wrap narrow center">
+          <img src="img/logo.svg" alt="" width="72" height="72" />
+          <h2>Probala en tu próximo entrenamiento.</h2>
+          <p>Es gratis, no pide registro y se instala en un minuto.</p>
+          <div class="actions center">
+            <a class="btn primary" data-app href="#instalar">Abrir la app</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <p>
+          MejorAndo es un proyecto personal de Matías Mazzitelli.
+        </p>
+        <p class="fine">
+          Las ilustraciones de los ejercicios son del proyecto
+          <a href="https://github.com/everkinetic/data" rel="noopener">Everkinetic</a>, de Greg
+          Priday, con licencia
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener">CC BY-SA 4.0</a>.
+          Se convirtieron a otro formato y tamaño, sin cambiar el dibujo.
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
