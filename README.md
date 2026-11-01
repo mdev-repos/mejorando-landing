@@ -11,10 +11,10 @@
 </p>
 
 <p align="center">
-  <a href="https://mdev-repos.github.io/mejorando/"><strong>Abrir la app</strong></a> ·
+  <a href="https://mdev-repos.github.io/mejorando-app/"><strong>Abrir la app</strong></a> ·
   <a href="https://mdev-repos.github.io/mejorando-landing/">Ver la página</a> ·
   <a href="https://mdev-repos.github.io/mejorando-landing/faq.html">Preguntas frecuentes</a> ·
-  <a href="https://github.com/mdev-repos/mejorando">Código de la app</a>
+  <a href="https://github.com/mdev-repos/mejorando-app">Código de la app</a>
 </p>
 
 <p align="center">
@@ -75,7 +75,7 @@ Armás un macrociclo una vez y se lo mandás a quien quieras, por el menú de co
 
 ## Instalala
 
-**En Android.** Abrí [la app](https://mdev-repos.github.io/mejorando/) con Chrome. Tocá **Instalar** en la tarjeta de Inicio, o el menú de los tres puntos y **Instalar aplicación**. Queda en tu pantalla de inicio con su ícono.
+**En Android.** Abrí [la app](https://mdev-repos.github.io/mejorando-app/) con Chrome. Tocá **Instalar** en la tarjeta de Inicio, o el menú de los tres puntos y **Instalar aplicación**. Queda en tu pantalla de inicio con su ícono.
 
 **En iPhone.** Abrila con Safari, tocá **Compartir** y después **Agregar a inicio**. La probé en Android. En iPhone debería funcionar igual, pero no vibra y todavía no la probé ahí.
 
@@ -103,13 +103,13 @@ Soy desarrollador backend y esta app es el proyecto donde recorrí todo lo demá
 | **Pruebas** | Más de 60 pruebas automáticas sobre las reglas, la base de datos y las pantallas, con tipos estrictos y revisión automática en cada cambio |
 | **Publicación** | Se despliega sola a cada cambio. Una versión nueva se avisa dentro de la app y se instala con un toque |
 
-[Ver el código en GitHub](https://github.com/mdev-repos/mejorando) · [Leer las decisiones](https://github.com/mdev-repos/mejorando/tree/main/docs/decisiones)
+[Ver el código en GitHub](https://github.com/mdev-repos/mejorando-app) · [Leer las decisiones](https://github.com/mdev-repos/mejorando-app/tree/main/docs/decisiones)
 
 **Matías Mazzitelli.** Desarrollador backend con Java y Spring Boot y mainframe IBM. [GitHub](https://github.com/mdev-repos)
 
 ## Probala
 
-Es gratis, no pide registro y se instala en un minuto. **[Abrir la app](https://mdev-repos.github.io/mejorando/)**
+Es gratis, no pide registro y se instala en un minuto. **[Abrir la app](https://mdev-repos.github.io/mejorando-app/)**
 
 ¿Algo no funciona o se te ocurre una mejora? Contámelo en el [formulario de comentarios](https://forms.gle/BD4rLPc3CnRy8jAa6).
 

@@ -1,5 +1,5 @@
 // Dirección de la app. Es lo único que hay que cambiar cuando se mueve de lugar.
-const APP_URL = ''
+const APP_URL = 'https://mdev-repos.github.io/mejorando-app/'
 
 if (APP_URL) {
   document.querySelectorAll('[data-app]').forEach((a) => {
