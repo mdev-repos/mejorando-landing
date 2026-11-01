@@ -9,6 +9,13 @@
       content="MejorAndo es una app gratuita para planificar tus entrenamientos de fuerza, seguirlos serie por serie y ver si mejoraste. Se instala en el celular y funciona sin conexión."
     />
     <meta name="theme-color" content="#0c1017" />
+    <script>
+      // se aplica antes de pintar para que no parpadee
+      try {
+        var t = localStorage.getItem("mejorando.landing.tema")
+        if (t === "claro" || t === "oscuro") document.documentElement.dataset.theme = t === "claro" ? "light" : "dark"
+      } catch (e) {}
+    </script>
     <meta property="og:title" content="MejorAndo" />
     <meta
       property="og:description"
@@ -23,12 +30,23 @@
       <div class="wrap top-in">
         <a class="brand" href="#" aria-label="MejorAndo, inicio">
           <img src="img/logo.svg" alt="" width="36" height="36" />
-          <picture>
-            <source srcset="img/wordmark-claro.svg" media="(prefers-color-scheme: light)" />
-            <img src="img/wordmark-oscuro.svg" alt="MejorAndo" height="22" />
-          </picture>
+          <span class="wordmark">
+            <img class="wm-claro" src="img/wordmark-claro.svg" alt="MejorAndo" height="22" />
+            <img class="wm-oscuro" src="img/wordmark-oscuro.svg" alt="MejorAndo" height="22" />
+          </span>
         </a>
-        <a class="btn small" data-app href="#instalar">Abrir la app</a>
+        <div class="top-actions">
+          <button class="theme-btn" id="theme" type="button" aria-label="Cambiar el tema">
+            <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2" />
+              <path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <a class="btn small" data-app href="#instalar">Abrir la app</a>
+        </div>
       </div>
     </header>
 
@@ -67,17 +85,17 @@
           <p class="eyebrow">Por qué existe</p>
           <h2>De una hoja de papel a una app.</h2>
           <p>
-            Bajé 20 kg en unos meses. Durante ese tiempo lo fui llevando todo en papel, y esa forma
+            La app nace de mi experiencia personal. Bajé 20 kg en unos meses, estudiando mucho sobre entrenamiento y salud por mi cuenta, adquiriendo buenas prácticas para lograr mis objetivos. Durante ese tiempo lo fui llevando todo “a mano”, el progreso en el gimnasio con papel y bolígrafo, y la organización de la dieta y su progreso en hojas de cálculo. Esa forma
             de anotar fue lo que más me ayudó a mejorar mi manera de trabajar.
           </p>
           <p>
-            Quise construir una app que recogiera aquello que hice en papel, para que otras personas
+            Es por ello que quise construir una app que recogiera aquello que hice en papel y en hojas de cálculo, para que otras personas
             también puedan conseguir sus objetivos.
           </p>
           <p class="sign">Matías</p>
           <p class="note">
             Por eso es una app chica y hace pocas cosas. Las que hace tienen que servir mientras
-            entrenás, con la mano mojada de sudor y entre una serie y otra.
+            entrenás, entre una serie y otra, siendo una ayuda y no una molestia.
           </p>
         </div>
       </section>
@@ -143,7 +161,7 @@
             <div class="feature-text">
               <h3>Descansos que se respetan</h3>
               <p>
-                El descanso lo define la rutina y el cronómetro no deja saltearlo. Cuando se acerca
+                El descanso lo define la rutina y el cronómetro no deja saltearlo (el descanso es tan importante como el peso y las repes). Cuando se acerca
                 el final cambia de color, a los 15 segundos pasa a amarillo, a los 10 a rojo y al
                 terminar a verde. También suena y vibra, y cada aviso se puede apagar.
               </p>
@@ -163,7 +181,7 @@
             <div class="feature-text">
               <h3>Más de 240 ejercicios con dibujo</h3>
               <p>
-                Elegís por grupo muscular y cada ejercicio trae su ilustración. Si falta alguno,
+                Elegís por grupo muscular y casi todos los ejercicios traen su ilustración. Si falta alguno,
                 creás el tuyo. Cada ejercicio recuerda de cuánto en cuánto subís el peso.
               </p>
               <ul class="thumbs" aria-label="Algunos ejercicios del catálogo">
