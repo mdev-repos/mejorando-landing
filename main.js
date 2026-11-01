@@ -9,7 +9,7 @@ if (APP_URL) {
 }
 
 // Formulario para dejar comentarios. Mientras esté vacío, el enlace no se muestra.
-const FEEDBACK_URL = ''
+const FEEDBACK_URL = 'https://forms.gle/BD4rLPc3CnRy8jAa6'
 
 if (FEEDBACK_URL) {
   document.querySelectorAll('[data-feedback]').forEach((a) => {
