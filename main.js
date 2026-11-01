@@ -7,3 +7,15 @@ if (APP_URL) {
     a.setAttribute('rel', 'noopener')
   })
 }
+
+// Formulario para dejar comentarios. Mientras esté vacío, el enlace no se muestra.
+const FEEDBACK_URL = ''
+
+if (FEEDBACK_URL) {
+  document.querySelectorAll('[data-feedback]').forEach((a) => {
+    a.setAttribute('href', FEEDBACK_URL)
+    a.setAttribute('rel', 'noopener')
+    a.setAttribute('target', '_blank')
+  })
+  document.querySelectorAll('.feedback').forEach((p) => (p.hidden = false))
+}

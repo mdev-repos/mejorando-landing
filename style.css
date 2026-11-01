@@ -570,3 +570,10 @@ section {
     transition: none;
   }
 }
+
+.feedback {
+  margin-top: 22px;
+}
+.feedback[hidden] {
+  display: none;
+}
