@@ -221,6 +221,7 @@ section {
   border-radius: 16px;
   font: inherit;
   font-weight: 800;
+  white-space: nowrap;
   text-decoration: none;
   border: 1px solid var(--border);
   color: var(--text);
@@ -683,4 +684,38 @@ section {
 }
 .faq .resp p + p {
   margin-top: 10px;
+}
+
+/* encabezado en teléfonos angostos, para que el botón entre en una línea */
+@media (max-width: 430px) {
+  .top-in {
+    gap: 8px;
+  }
+  .brand {
+    gap: 8px;
+  }
+  .brand > img {
+    height: 32px;
+  }
+  .wordmark img {
+    height: 19px;
+  }
+  .top-actions {
+    gap: 8px;
+  }
+  .theme-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+  }
+  .btn.small {
+    min-height: 38px;
+    padding: 0 14px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 340px) {
+  .wordmark {
+    display: none;
+  }
 }
