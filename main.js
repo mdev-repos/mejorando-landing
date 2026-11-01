@@ -45,3 +45,16 @@ document.getElementById('theme')?.addEventListener('click', () => {
 })
 query.addEventListener?.('change', sync)
 sync()
+
+// Contador de visitas y clics, anónimo y sin cookies (GoatCounter). Mientras el nombre esté vacío, no se carga nada.
+// Se obtiene al crear el sitio en goatcounter.com, por ejemplo 'mejorando' para mejorando.goatcounter.com.
+const GOATCOUNTER = 'mejorando'
+
+if (GOATCOUNTER) {
+  const script = document.createElement('script')
+  script.async = true
+  script.src = 'https://gc.zgo.at/count.js'
+  script.dataset.goatcounter = `https://${GOATCOUNTER}.goatcounter.com/count`
+  document.head.appendChild(script)
+  document.querySelectorAll('.conteo').forEach((el) => (el.hidden = false))
+}

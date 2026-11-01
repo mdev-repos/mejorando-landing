@@ -23,7 +23,7 @@
     />
     <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="stylesheet" href="style.css?v=2" />
+    <link rel="stylesheet" href="style.css?v=3" />
   </head>
   <body>
     <header class="top">
@@ -45,7 +45,7 @@
               <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
             </svg>
           </button>
-          <a class="btn small" data-app href="#instalar">Abrir la app</a>
+          <a data-goatcounter-click="abrir-encabezado" class="btn small" data-app href="#instalar">Abrir la app</a>
         </div>
       </div>
     </header>
@@ -63,8 +63,8 @@
               funciona sin conexión.
             </p>
             <div class="actions">
-              <a class="btn primary" data-app href="#instalar">Abrir la app</a>
-              <a class="btn ghost" href="#instalar">Cómo instalarla</a>
+              <a data-goatcounter-click="abrir-portada" class="btn primary" data-app href="#instalar">Abrir la app</a>
+              <a data-goatcounter-click="como-instalar" class="btn ghost" href="#instalar">Cómo instalarla</a>
             </div>
             <p class="fine">Tus datos quedan en tu teléfono. No pide registro ni muestra anuncios.</p>
           </div>
@@ -268,7 +268,7 @@
             <div class="step">
               <h3>En Android</h3>
               <ol>
-                <li>Abrí <a data-app href="#instalar">la app</a> con Chrome.</li>
+                <li>Abrí <a data-goatcounter-click="abrir-instalacion" data-app href="#instalar">la app</a> con Chrome.</li>
                 <li>
                   Tocá <strong>Instalar</strong> en la tarjeta de Inicio, o el menú de los tres
                   puntos y <strong>Instalar aplicación</strong>.
@@ -399,12 +399,14 @@
           </div>
           <div class="actions center">
             <a
+              data-goatcounter-click="codigo-github"
               class="btn ghost"
               href="https://github.com/mdev-repos/mejorando-app"
               rel="noopener"
               >Ver el código en GitHub</a
             >
             <a
+              data-goatcounter-click="decisiones"
               class="btn ghost"
               href="https://github.com/mdev-repos/mejorando-app/tree/main/docs/decisiones"
               rel="noopener"
@@ -426,11 +428,11 @@
           <h2>Probala en tu próximo entrenamiento.</h2>
           <p>Es gratis, no pide registro y se instala en un minuto.</p>
           <div class="actions center">
-            <a class="btn primary" data-app href="#instalar">Abrir la app</a>
+            <a data-goatcounter-click="abrir-final" class="btn primary" data-app href="#instalar">Abrir la app</a>
           </div>
           <p class="fine feedback" hidden>
             ¿Algo no funciona o se te ocurre una mejora?
-            <a data-feedback href="#">Contámelo</a>
+            <a data-goatcounter-click="comentarios" data-feedback href="#">Contámelo</a>
           </p>
         </div>
       </section>
@@ -439,7 +441,12 @@
     <footer class="foot">
       <div class="wrap">
         <p>
-          MejorAndo es un proyecto personal de Matías Mazzitelli. <a href="faq.html">Preguntas frecuentes</a>
+          MejorAndo es un proyecto personal de Matías Mazzitelli. <a data-goatcounter-click="preguntas-frecuentes" href="faq.html">Preguntas frecuentes</a>
+        </p>
+        <p class="fine conteo" hidden>
+          Esta página cuenta las visitas y los clics de forma anónima con
+          <a href="https://www.goatcounter.com" rel="noopener">GoatCounter</a>, sin cookies ni datos
+          personales.
         </p>
         <p class="fine">
           Las ilustraciones de los ejercicios son del proyecto
@@ -451,6 +458,6 @@
       </div>
     </footer>
 
-    <script src="main.js?v=2"></script>
+    <script src="main.js?v=4"></script>
   </body>
 </html>

@@ -719,3 +719,7 @@ section {
     display: none;
   }
 }
+
+.conteo[hidden] {
+  display: none;
+}
